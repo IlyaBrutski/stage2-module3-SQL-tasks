@@ -10,22 +10,22 @@ INSERT INTO student (name, groupnumber) VALUES ('Logan', 3);
 INSERT INTO student (name, groupnumber) VALUES ('Danik', 4);
 INSERT INTO student (name, groupnumber) VALUES ('Ilya', 5);
 
-insert into subject (name, grade) values ('Art', 1);
-insert into subject (name, grade) values ('music', 1);
-insert into subject (name, grade) values ('Geography', 2);
-insert into subject (name, grade) values ('history', 2);
-insert into subject (name, grade) values ('PE', 3);
-insert into subject (name, grade) values ('math', 3);
-insert into subject (name, grade) values ('Science', 4);
-insert into subject (name, grade) values ('IT', 4);
-insert into subject (name, grade) values ('C++', 5);
-insert into subject (name, grade) values ('Java', 5);
+INSERT INTO subject (name, grade) VALUES ('Art', 1);
+INSERT INTO subject (name, grade) VALUES ('music', 1);
+INSERT INTO subject (name, grade) VALUES ('Geography', 2);
+INSERT INTO subject (name, grade) VALUES ('history', 2);
+INSERT INTO subject (name, grade) VALUES ('PE', 3);
+INSERT INTO subject (name, grade) VALUES ('math', 3);
+INSERT INTO subject (name, grade) VALUES ('Science', 4);
+INSERT INTO subject (name, grade) VALUES ('IT', 4);
+INSERT INTO subject (name, grade) VALUES ('C++', 5);
+INSERT INTO subject (name, grade) VALUES ('Java', 5);
 
-insert into paymenttype (name) values ('DAILY');
-insert into paymenttype (name) values ('WEEKLY');
-insert into paymenttype (name) values ('MONTHLY');
+INSERT INTO paymenttype (name) VALUES ('DAILY');
+INSERT INTO paymenttype (name) VALUES ('WEEKLY');
+INSERT INTO paymenttype (name) VALUES ('MONTHLY');
 
-insert into payment (name) values ('MONTHLY');
+INSERT INTO payment (name) VALUES ('MONTHLY');
 
 INSERT INTO Payment (type_id, student_id) VALUES ((SELECT id FROM paymenttype WHERE name = 'Weekly'), (SELECT id FROM student WHERE name = 'John'));
 INSERT INTO Payment (type_id, student_id) VALUES ((SELECT id FROM paymenttype WHERE name = 'Monthly'), (SELECT id FROM student WHERE name = 'Oliver'));
